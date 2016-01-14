@@ -1,0 +1,50 @@
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script type="text/javascript" src = "js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('.myLink').on('click', function() {
+				$('h1').addClass('red')
+				$('h1').fadeToggle();
+			});
+
+			$('.myOtherLink').on('click', function() {
+				$('h2').slideToggle();
+
+			});
+
+			$('.mySecondOtherLink').on('mouseenter', function() {
+				$('h3').addClass('red');
+
+			});
+
+			$('.mySecondOtherLink').on('mouseleave', function() {
+				$('h3').removeClass('red');
+
+			});
+
+			// this is a convenience method. it is a shortcut way of saying onclick
+			$('h3').click(function() {
+				// change the css
+				$('h3').css('font-size', '40px');
+			});
+
+
+
+		});
+	</script>
+</head>
+<body>
+	<h1>foo</h1>
+	<h2>bar</h2>
+	<h3>yadda</h3>
+
+	<a href="#" class='myLink'>Fade Toggle</a> <br />
+	<a href="#" class='myOtherLink'>Slide Toggle</a><br />
+	<a href="#" class='mySecondOtherLink'>Mouse Enter</a><br />
+
+
+</body>
+</html>
