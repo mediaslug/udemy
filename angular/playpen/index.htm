@@ -48,6 +48,44 @@
                 
                 </form>
                 
+                <div class="alert"  
+                     ng-class = "{'alert-warning': handle.length < characters, 
+                                  'alert-danger': handle.length > characters}">
+                    <div ng-show="handle.length < characters">
+                        Too short
+                    </div>
+                    <div ng-show="handle.length > characters">
+                        Too long
+                    </div>
+                
+                </div>
+                
+                
+                <hr />
+                
+                
+                    <div class="alert"  
+                     ng-class = "{'alert-warning': handle.length < characters, 
+                                  'alert-danger': handle.length > characters}" 
+                     ng-if="handle.length !== characters">
+                    Must be 5 chars. with ng-if
+                   </div>
+                
+                    <h3>Rules</h3>
+                    <ul>
+                        <li ng-repeat="rule in rules">  {{rule.ruletext}}</li>
+                
+                    </ul>
+                
+                
+                
+                
+                
+                
+                <div class="alert"ng-show="handle.length !== characters">
+                    Must be 5 chars. with ng-show
+                </div>
+                
                 http://twitter.com/ {{lowercase() }}
                 
             </div>
