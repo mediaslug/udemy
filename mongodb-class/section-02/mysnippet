@@ -1,0 +1,52 @@
+db.products.update(
+   { _id: ObjectId("579d88d783921d744b61d13a") },
+   { $set:
+      {
+        phone: 500-456-7891,
+        details: { model: "14Q3", make: "xyz" },
+        tags: [ "coats", "outerwear", "clothing" ]
+      }
+   }
+)
+
+db.customers.insert(
+    {   first_name:"Steve",
+        last_name:"Thomas",
+        age:"39",
+        address: {
+            street: "120 Third st",
+            city: "Tacoma",
+            state:"WA",
+            zip:"99999"},
+        phone: {
+            home: "123-456-8976",
+            work: "123-456-2345",
+            mobile: "123-456-5673"
+        },
+     services : [
+         {
+             service_id: "hosting_linux",
+             service_name: "Linux Hosting"
+         },
+         {
+             service_id: "hosting_email",
+             service_name: "Email Hosting"
+         },
+
+          {
+             service_id: "domain_register",
+             service_name: "Domain Registration",
+             domain_name: "something.com"
+         }
+     ],
+
+     services_count: 3
+    })
+
+
+// pull back a list of services
+
+db.customers.find({first_name:"Steve"}, {services: 1}).pretty()
+
+db.customers.find({first_name:"Steve"}, {"services.service_name": 1}).pretty()
+

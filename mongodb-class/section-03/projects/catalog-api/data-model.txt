@@ -1,0 +1,64 @@
+{
+	name:"Microsoft Surface",
+	category: "Electronics",
+	model: "7G5-00001",
+	sku: "3938373",
+	img: "https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150",
+	price: 8.99,
+	pickup_available: true,
+	description: "Access digital work tools with this Dell Inspiron laptop. The 17.3-inch screen lets you maximize documents for personal viewing comfort, and the full keyboard includes a 10-key pad to make data entry easier. This Dell Inspiron laptop comes with a touch screen for added navigation options and NVIDIA GeForce 940MX graphics that let you move from work to gaming.",
+	release_date: ISODate("2015-09-01"),
+	specifications: {
+		height: "7.36 inches",
+		width: "10.52 inches",
+		weight: "21.92 ounces",
+		battery_life: "10 hours",
+		display_type: "LCD",
+		touch_screen: true,
+		memory: "2GB",
+		processor_type:"Intel"
+	}, 
+
+	reviews: [
+		{
+			subject: "love it!",
+			body: "Great computer. Screen large enough to see what you are doing. Fast response, easy to set up.",
+			rating: "5",
+			user: "Grammy",
+			date: ISODate("2015-10-23"),
+			would_recommend: true
+
+		},
+
+		{
+			subject: "outstanding",
+			body: "The product performs better than expected. The only draw back is the 5400 rpm hard drive. At least it could have been a 7200 rpm drive for the amount of money that I spent. But overall a very good machine.",
+			rating: "4",
+			user: "SnowyEgret",
+			date: ISODate("2015-11-23"),
+			would_recommend: true
+		},
+
+		{
+			subject: "it is great!",
+			body: "I had a Samsung laptop with windows 7 and tried to upgrade to windows 10 but kept reaching 99% complete and it would never finish. Thought it was time to upgrade anyway. This laptop does everything I need and more. Great login security with facial recognition, excellent speed and storage for all my files. Also has touch screen which makes it even better.",
+			rating: "4.5",
+			user: "MyrtleBeachBum1538",
+			date: ISODate("2015-12-07"),
+			would_recommend: true
+		},
+
+		{
+			subject: "i wanted a mac!",
+			body: "it is fine and all, but i my heart belongs to apple",
+			rating: "2.5",
+			user: "tomtom",
+			date: ISODate("2016-01-02"),
+			would_recommend: false
+		}
+	],
+
+	protection_services: ["damage", "battery", "power"]
+
+
+	}
